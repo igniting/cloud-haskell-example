@@ -26,3 +26,21 @@ executable closure-example
     main-is: src/Closure.hs
     default-language: Haskell2010
 
+executable network-server-example
+    build-depends:
+        base >=4.7 && <4.8,
+        network-transport >=0.4 && <0.5,
+        network-transport-tcp >=0.4 && <0.5,
+        containers >=0.5 && <0.6
+    main-is: src/NetworkServer.hs
+    default-language: Haskell2010
+
+executable network-client-example
+    build-depends:
+        base >=4.7 && <4.8,
+        bytestring >=0.10 && <0.11,
+        network-transport >=0.4 && <0.5,
+        network-transport-tcp >=0.4 && <0.5
+    main-is: src/NetworkClient.hs
+    default-language: Haskell2010
+
